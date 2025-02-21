@@ -1,0 +1,132 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+#container {
+    border-radius: 12px; /* Rounded corners */
+    width: 30%;
+    margin: 40px auto;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.3); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Blur effect for the background */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    text-align: center;
+    color: #fff; /* Text color set to white for contrast */
+}
+.create-account-link {
+    color: #4e73df; /* Blue color for the link */
+    font-weight: bold; /* Make the text bold */
+    font-size: 16px; /* Adjust font size */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.create-account-link:hover {
+    color: #133396; /* Change color on hover */
+    text-decoration: underline; /* Underline text on hover */
+}
+.text{
+    color:black;
+}
+.pass{
+    color:black;
+    display: block; /* Ensure the label takes up the full width */
+    text-align: left; /* Align the text of the label to the left */
+    font-size: 16px; /* Adjust the font size if needed */
+    margin-bottom: 5px; /* Space between the label and input field */
+}
+
+
+
+form > input {
+    width: 100%;
+    height: 45px;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+form > input:focus {
+    outline: none;
+    border-color: #fff; /* Focus border color */
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.7); /* Focus glow */
+}
+
+#submit {
+    width: 100%;
+    height: 50px;
+    background-color: #3E8DA8; /* Green background */
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#submit:hover {
+    background-color: #11495c; /* Darker green on hover */
+}
+
+button {
+    border: none;
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+    background-color: #f7f7f7;
+    font-weight: bold;
+    color: #4e73df; /* Light blue text */
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4e73df; /* Blue background on hover */
+    color: white; /* White text on hover */
+}
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 768px) {
+    #container {
+        width: 80%; /* Increased width for smaller screens */
+        padding: 20px; /* Adjusted padding for smaller screens */
+    }
+
+    form > input {
+        height: 40px; /* Slightly smaller input field height */
+        font-size: 14px; /* Smaller font size for smaller screens */
+    }
+
+    #submit, button {
+        height: 45px; /* Adjusted height for buttons */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #container {
+        width: 90%; /* Further increase container width for very small screens */
+        padding: 15px; /* Reduced padding for mobile */
+    }
+
+    form > input {
+        height: 35px; /* Even smaller input fields for mobile */
+        font-size: 14px; /* Font size adjusted for better readability */
+    }
+
+    #submit, button {
+        height: 40px; /* Slightly smaller button height */
+    }
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="title">Checkout Page</title>
+    <link rel="stylesheet" href="./checkOut.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="navbar.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./footer.css">
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+          <i class='bx bx-menu'></i>
+          <div class="logo"><a href="./index.html"><img src="https://bellavitaorganic.com/cdn/shop/files/Bella_Vita_Logo_360_E_2x_White.png?height=30&v=1689597318"></a></div>
+          <div class="nav-links">
+            <div class="sidebar-logo"><span class="logo-name"></span><i class='bx bx-x'></i></div>
+            <ul class="links">
+              <li><a href="./shopall.html">SHOP ALL</a></li>
+              <li><a href="./bestSellers.html">BESTSELLERS</a></li>
+              <li><a href="./perfume.html">PERFUMES</a></li>
+              <li><a href="./new.html">NEW ARRIVALS</a></li>
+              <li><a href="./gifting.html">GIFTING</a></li>
+              <li><a id="login" href="./login.html">Login</a></li>
+              <li><a href="./cart.html">Cart</a></li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <h1>- Checkout Page -</h1>
+
+    <div id="main-checkout">
+      <div id="input">
+          <form>
+            <input type="text" id="firstName" placeholder="Enter Your First Name" required>
+            <input type="text" id="lastName" placeholder="Enter Your Last Name" required>
+            <input type="email" id="email" placeholder="Enter Your Email" required>
+            <input type="text" id="phone" placeholder="Enter Your Phone Number" required>
+            <input type="text" id="street" placeholder="Street Address" required>
+            <input type="text" id="district" placeholder="District" required>
+            <input type="text" id="city" placeholder="City" required>
+            <input type="text" id="province" placeholder="Province" required>
+            <select id="country" required> 
+                <option value="Credit Card">Indonesia</option>
+                <option value="PayPal">China</option>
+                <option value="Cash on Delivery">Amerika</option>
+            </select>
+
+            <select id="paymentMethod" required>
+                  <option value="Credit Card">Credit Card</option>
+                  <option value="Credit Card">Transfer Via Bank</option>
+                  <option value="PayPal">PayPal</option>
+                  <option value="Cash on Delivery">Cash on Delivery</option>
+              </select>
+              <input type="button" id="checkoutBtn" value="Checkout">
+          </form>
+      </div>
+  
+      <div id="product-details">
+          <!-- Produk akan dimuat di sini menggunakan JS -->
+      </div>
+    </div>
+
+    <footer>
+        <div class="customer-footer">
+          <div class="cust1">
+            <p class="cust-first">BEST SELLER</p>
+            <p class="cust-Second">Ultimate Perfume Box</p>
+            <p class="cust-Second">Perfume Gift Set For Men</p>
+            <p class="cust-Second">Perfume Gift Set For Women</p>
+            <p class="cust-Second">Under Eye Cream for Dark Circles</p>
+            <p class="cust-Second">Perfume For Men</p>
+          </div>
+          <div class="cust1">
+            <p class="cust-first">INFORMATION</p>
+            <p class="cust-Second">Blogs</p>
+            <p class="cust-Second">Newsroom</p>
+            <p class="cust-Second">Terms & Conditions</p>
+            <p class="cust-Second">Privacy Policy</p>
+            <p class="cust-Second">Refund and Return</p>
+            <p class="cust-Second">Shipping Policy</p>
+            <p class="cust-Second">Bulk Order - GST Invoice</p>
+          </div>
+          <div class="cust1">
+            <p class="cust-first">SUPPORT</p>
+            <p class="cust-Second">About Us</p>
+            <p class="cust-Second">Contact Us</p>
+            <p class="cust-Second">Order Tracking</p>
+            <p class="cust-Second">All Products</p>
+            <p class="cust-Second">FAQ</p>
+            <p class="cust-Second">Sitemap</p>
+          </div>
+          <div class="cust1">
+            <p class="cust-first">Exclusive</p>
+            <p class="cust-Second"><input type="email" placeholder="Enter Email"></p>
+            <p class="cust-Second">Sign up here to get the latest news, updates and special offers delivered to your inbox.</p>
+            <p class="cust-Second">shop@bellavitaorganic.com</p>
+            <p class="cust-Second">Timing: 10:00 AM to 7:00 PM</p>
+            <p class="cust-Second">+91-9311732440</p>
+          </div>
+        </div>
+    </footer>
+
+    <script src="./checkOut.js"></script>
+</body>
+</html>

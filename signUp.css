@@ -1,0 +1,133 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    position: relative;
+    background-color: #f8f9fa;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+.form {
+    /* Tidak menggunakan flex di sini */
+}
+
+#container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    box-sizing: border-box;
+    position: absolute; /* Menggunakan posisi absolut */
+    top: 50%; /* Menempatkan form di tengah */
+    left: 50%; /* Menempatkan form di tengah */
+    transform: translate(-50%, -50%); /* Mengatur form agar benar-benar terpusat */
+}
+
+h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+form > input {
+    width: 100%;
+    height: 45px;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 30px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+form > input:focus {
+    outline: none;
+    border-color: #4e73df;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+}
+
+#submit {
+    width: 100%;
+    height: 50px;
+    background-color: #3E8DA8;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#submit:hover {
+    background-color: #11495c;
+}
+
+p {
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.create-account-link {
+    color: #4e73df;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.create-account-link:hover {
+    color: #122e81;
+    text-decoration: underline;
+}
+
+/* Media Query untuk Responsif */
+@media (max-width: 768px) {
+    #container {
+        width: 90%; /* Memastikan form lebih lebar pada layar kecil */
+    }
+
+    h3 {
+        font-size: 24px; /* Menyesuaikan ukuran font pada layar kecil */
+    }
+
+    form > input {
+        font-size: 14px; /* Menyesuaikan ukuran font input */
+    }
+
+    #submit {
+        height: 45px; /* Menyesuaikan ukuran button */
+    }
+}
+
+@media (max-width: 480px) {
+    #container {
+        padding: 15px; /* Mengurangi padding pada layar lebih kecil */
+        width: 85%; /* Lebar container lebih fleksibel */
+    }
+
+    h3 {
+        font-size: 22px; /* Menyesuaikan ukuran font untuk layar kecil */
+    }
+
+    form > input {
+        font-size: 14px; /* Menyesuaikan ukuran font input lebih kecil */
+    }
+
+    #submit {
+        height: 40px; /* Menyesuaikan ukuran button lebih kecil */
+    }
+}
